@@ -70,3 +70,15 @@ public class StringFindUnique {
         }
     }
 }
+/*CONSOLE OUTPUT
+true
+level
+false
+[a, a, a, a, b, b, b, b, d, d, d, c, c, c]
+@@@@[a, b, c, d]
+hola ---  a, b, c, d
+hi ---abcd
+abdc
+a4b4d3c3
+
+ */
