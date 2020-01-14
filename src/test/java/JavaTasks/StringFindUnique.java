@@ -9,6 +9,8 @@ public class StringFindUnique {
 
     public static void main(String[] args) {
 
+        //Palindrome ++ reverse
+
         //with StringBuffer
 
         String orig = "Radar";

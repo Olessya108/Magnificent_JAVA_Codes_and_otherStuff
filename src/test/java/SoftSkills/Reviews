@@ -1,0 +1,253 @@
+My team uses "stock" cards to ensure that we always consider all diff types of tests.
+When unit testing wasn't yet a habit, we wrote a unit test card for each story on the board.
+Our "________" test card reminds the programmers to complete the job of integration testing and to make sure all of the parts of the code work together.
+
+ANSWER: END-TO-END
+====================
+
+What do you need to look for in a tester?
+
+1. experience writing black box and GUI test cases, designing tests to mitigate risks, and helping BAs define requirements
+
+2. Experience writing simple SQL queries and insert/update statements and basic grasp of Oracle or another relational databse
+===============================
+
+1st question asked to Bota:
+What makes testing successful?
+Answer: Good metrics, a Defect Tracking System, knowledge base, traceability, customer support, co-location of team
+
+===========================================
+
+hy should we use DTS (Defect Tracking System?)
+Answer: the bug database can be used as a knowledge base and it helps keep decisions and their background info
+====================================================
+
+Why should we NOT use a DTS?
+Answer: If your team works better by documenting defects in executable tests and fixing them right away, do that instead.
+ Sometimes, the team is small and works better by executing tests and fixing them right away
+ =========================================================
+
+ Discuss a test plan
+ The power of planning is to identify possible issues and dependencies, to bring risks to the surface to be talked about
+  and to be addressed, and to think about the big picture. The team needs to create a test plan document, but each project
+  is different, so don't expect that the same solution will fit all. Sometimes our customers insist on a test plan document.
+   A test plan might be part of a set of deliverables that also include items such as a requirements document and a design
+    document. With very large requirements documents, using a traceability matrix is the only way a team knew it had good
+    coverage.
+
+==================================================================
+
+Build/Operate/Check
+setup/execute/validate is a simple way of doing it - be able to discuss this in a business context
+====================================================================
+
+What is an Artifact? What is Sprint and Product Backlog?
+Answer: an Artifact is a product backlog and sprint backlog (in Agile Scrum methodology)
+sprint backlog is the selected user stories
+product backlog are all the user stories
+=============================================================================
+
+Product backlog is discussed in Sprint Grooming
+Sprint backlog is discussed in Sprint Planning
+=============================================================================
+
+Code Design vs Test Design
+Coding and testing are part of one process in agile development. Code design and test design are complementary and
+interdependent. You can't write tests without a testable code design, and you can't write code without well-designed tests
+ that clearly communicate requirements and are compatible with the system architecture. This is why we always consider
+ coding and testing together. When we estimate stories we include time for BOTH coding and testing,
+ and when we plan each iteration and story, we budget time to design both tests and code.
+ ================================================================================================
+
+ What is surefire?
+ Tests in your test source directory can be any combination of the following:
+ TestNG
+ JUnit (3.8, 4.x or 5.x)
+ POJO
+
+ Which providers are available is controlled simply by the inclusion of the appropriate dependencies (i.e., junit:junit
+  or junit:junit-dep for JUnit4, junit-jupiter-engine or junit-vintage-engine for JUnit5 and org.testng:testng 4.7+ for
+   TestNG). Since this is required to compile the test classes anyway, no additional configuration is required.
+ Note that any normal Surefire integration works identically no matter which providers are in use - so you can still produce
+ a Cobertura report and a Surefire results report on your project web site for your TestNG tests, for example.
+ The POJO provider above allows you to write tests that do not depend on either of JUnit and TestNG. It behaves in the same way,
+  running all test* methods that are public in the class, but the API dependency is not required. To perform assertions
+  , the JDK 1.4 assert keyword can be used. See Using POJO Tests for more information.
+ All of the providers support the Surefire Plugin parameter configurations. However, there are additional options
+ available if you are running TestNG tests (including if you are using TestNG to execute your JUnit tests,
+  which occurs by default if both are present in Surefire).
+ See Using TestNG for more information.
+===========================================================================================================
+What is requirement traceability matrix?
+EXCEL SHEET
+Requirement Traceability Matrix (RTM) is a document that maps and traces user requirement with test cases.
+ It captures all requirements proposed by the client and requirement traceability in a single document,
+ delivered at the conclusion of the Software devlopement life cycle
+
+ how does it relate to testers?
+ how far did the testers get? keeps track of their progress
+ here is an example https://strongqa.com/uploads/document/doc/52/traceability-matrix-template-01.xls
+ =======================================================================================================================
+
+Bug Life Cycle?
+A Defect life cycle, also known as a Bug life cycle, is a cycle of a defect from which it goes through covering the
+different states in its entire life. This starts as soon as any new defect
+is found by a tester and comes to an end when a tester closes that defect assuring that it won't get reproduced again.
+
+=============================================================================
+
+Sans titre
+Remember, a bug is not a bug at the beginning - it is a defect - first it gets assigned to a dev then he/she/they fixes
+ it, and we retest it, then we reopen it
+ --============================================================================
+
+ RON PATTON'S software testing pdf
+ p. 81 of 406
+ dynamic black box testing - what is it?
+  dynamic because the program is running-And, it’s black-box because you’re testing it without knowing exactly how it
+  works— with blinders on. You’re entering inputs, receiving outputs, and checking the results. Another name commonly
+  used for dynamic black-box testing is behavioral testing because you’re test- ing how the software actually behaves when
+   it’s used.
+ =========================================================
+ Difference btw Static and Dynamic
+ Static testing is more cost-effective than dynamic testing. ... Static testing is done in verification stage whereas
+ dynamic testing is done in validation stage. In static testing code is being examined without being executed whereas
+ In dynamic testing, code is being executed and tested without necessarily being examined.
+
+
+ ===============================================
+ WHAT IS THE DIFF BTW VALIDATION AND VERIFICATION?
+ Verification: did we make the right system?
+ Validation: did we make the system right?
+ =========================================================================
+ What is a technical writer?
+ Technical writers, also called technical communicators, prepare instruction manuals, journal articles, and other
+ supporting documents to communicate complex and technical information more easily. They also develop, gather, and
+ disseminate technical information among customers, designers, and manufacturers.
+
+ ============================================================
+ Software Testing by Ron Patton p.47 of 406
+ WHO ARE ARCHITECTS?
+ ANSWER: Architects or system engineers are the technical experts on the product team.They’re usually very experienced
+  and therefore are qualified to design the overall systems archi- tecture or design for the software. They work very
+   closely with the programmers.
+
+ ======================================================
+ DESCRIBE NON-FUNCTIONAL TESTING
+ NON-FUNCTIONAL TESTING
+ Non-functional testing is defined as a type of Software testing to check non-functional aspects (performance, usability,
+  reliability, etc) of a software application. It is designed to test the readiness of a system as per nonfunctional
+   parameters which are never addressed by functional testing.
+ =========================================================================
+ WHAT IS GITHUB?
+ Answer: It is a version control system - master has basic codes there
+
+
+===========================================================
+ Does a technical writer have a technical background? NO
+ A technical writer doesn’t need to have experience in IT or even a degree in technical studies. For us, the most important
+ thing was the knowledge of English, Microsoft office tools and flow diagrams.
+ At first, we feared that such a person would feel lost in our company and project, but our doubts quickly disappeared.
+ All thanks to an introduction plan, which I will present to you in the following paragraphs. It turned out that the
+  key was the pacing – everything had to be dosed in order not to frighten the new employee with something he/she had
+  never heard of. On their first day, I told our brand new technical writers that they’d work with databases.
+  Their expressions were priceless. Now, after a short introduction, they work with the data from the database better than I do.
+
+ ===============================================
+ Why couldn’t your QA write all the documentation?
+ WHY DON'T WE MAKE A TESTER WRITE ALL THE DOCUMENTATION? WHY USE A TECHNICAL WRITER WITH NO TECHNICAL BACKGROUND?
+ During the first weeks of our project development, a QA did write all the software documentation. That QA is me.
+  In the beginning, it was like a part-time job, but after the app had been tested, I was asked to document all the text inside.
+   Then the client made a presentation in front of his/her business associates so that they could decide which part to change.
+    The client also inputs all the changes in the appropriate excel columns for the devs to easily locate them. In time,
+    I received more and more requests, and I gradually stopped testing the application, which had a negative impact on its final quality.
+     We were wasting both QA time and the client’s money, which could instead be spent on 2 or 3 technical writers. For a similar price,
+     we’d get the required documentation much faster.
+
+
++++++++++++++++++++++++++++++++++++++++++++++=
+ WHAT VERSION OF CUCUMBER ARE YOU USING?
+ Safwan: make sure you say 4, b/c that's the only one that supports parallel
+ ALSO: remember JUnit and Cucumber must be the same version
+
+  ================================================================================================================
+
+
+ What is a formal review?
+ p.113 of 406
+ Formal review has an established process where the review group must produce a written report summarizingthe results of
+  the review and make that report available to the rest of the product develop- ment team. It’s imperative that others are
+   told the results of the meeting—how many problems were found, where they were found, and so on.
+  ================================================================================================================
+
+ How do you resolve a Git Conflict?
+ your local master is diff from remote master - so you should pull remote master - so since your two masters are diff -
+  you cannot merge them - so you can do 'git stash' which will hide your changes then do a 'git pop' which will let them
+  emerge. you can do 'git diff' which will show and label which one as 'head' and the other as 'master' - it's where your
+  version head is at - it will show you these lines are diff- and then you have to PHYSICALLY delete which one you don't want
+  ================================================================================================================
+
+ 'git reset' copy hashcode and do 'git reset hard' and it will redo everything to your code. let's say you do something
+  stupid, you can just do 'git reset hard master' then that will wipe everything
+
+  ================================================================================================================
+
+ it will reset everything up until 'git push'
+ 'git reset' will revert back to the commits
+
+ ================================================================================================================
+
+ What is the difference btw SoftAssert and HardAssert?
+ Soft Assert: Soft Assert collects errors during @Test. Soft Assert does not throw an exception when an assert fails and
+ would continue with the next step after the assert statement. Hard Assert: Hard Assert throws an AssertExceptionimmediately
+ when an assert statement fails and test suite continues with next @Test.
+
+
+ ================================================================================================================
+
+ How do you launch a browser?
+ WebDriver driver = new FirefoxDriver();
+ This is the java implementation of launching a browser in Selenium. Here, ‘WebDriver’ is an interface and we are creating
+  a reference variable ‘driver’ of type WebDriver, instantiated using ‘FireFoxDriver’ class.
+ For those who are not very proficient in Java, an interface is like a contract that classes implementing it must follow.
+ An interface contains a set of variables and methods without anybody(no implementation, only method name, and signature).
+  We cannot instantiate objects from interfaces. Hence, the below line of code is incorrect and throws a compile-time error
+  saying “Cannot instantiate the type WebDriver”.
+
+  ================================================================================================================
+
+ How to handle a dropdown?
+ Models a SELECT tag, providing helper methods to select and deselect options. Select is a class that is provided by Selenium
+ to perform multiple operations on DropDown object and Multiple Select objects. This class can be found under the Selenium’s
+ Support.UI.Select package. As Select is also an ordinary class, so it’s object is also created by a New keyword with
+ regular class creation syntax.
+ Select oSelect = new Select());
+ The above code will generate compile-time error in Eclipse, as Select() is asking for constructor. Bring the cursor over
+ Select(), Eclipse will populate a suggestion.
+  ================================================================================================================
+
+ Diff btw Element and WebElement?
+ findElement is representing one
+ findElements represents table or list
+ ================================================================================================================
+ How do you count how many checkboxes you have?
+ I will check xpath, start input, put square bracket, put checkbox number
+ keyword - use FINDELEMENTS
+
+ =====================================================================================
+ Difference between Implicit Wait Vs Explicit Wait
+
+ Implicit Wait time is applied to all the elements in the script
+ Explicit Wait time is applied only to those elements which are intended by us
+ In Implicit Wait, we need not specify "ExpectedConditions" on the element to be located
+ In Explicit Wait, we need to specify "ExpectedConditions" on the element to be located
+ It is recommended to use when the elements are located with the time frame specified in implicit wait
+ It is recommended to use when the elements are taking long time to load and also for verifying the property of the
+  element like(visibilityOfElementLocated, elementToBeClickable,elementToBeSelected)
+
+
+link:https://files.slack.com/files-pri/TP6MZG4VC-FS5AXJFLJ/differencebetweenjunitandtestng1.png
+
+===================================================================================
+
+
