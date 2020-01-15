@@ -42,7 +42,7 @@ public class SwapReverseRemoveAhmed {
 
 
 //to reverse elements in the array
-        String [] arr = {"hi","how","are","yofdsu"};
+        String [] arr = {"Privet","Hello","Hola","Bonjour"};
         String [] word= new String[ arr.length];
 
         int x =  arr.length-1; //this is the last index of the array
@@ -57,9 +57,9 @@ public class SwapReverseRemoveAhmed {
 //----------------------------------------------------------
 // find the common elements
 
-        String [] whatever = {"hi","how","are","YO"};
+        String [] whatever = {"great","how","are","YO"};
 
-        String [] whatever2 = {"are","who","hi","you","YO"};
+        String [] whatever2 = {"great","who","are","you","YO"};
         List<String> common = new ArrayList<String>();
 
         for (int i = 0; i < whatever.length; i++) {
@@ -84,7 +84,7 @@ public class SwapReverseRemoveAhmed {
                 if(whatever[i]==whatever2[j]) {
                     break;
                 }
-                if(whatever[i]!=whatever2[j] && j== whatever2.length-1) {
+                if(whatever[i]!=whatever2[j] && j== whatever2.length-1) {  //j== whatever2.length-1 :to let the loop finish iteration before adding an element
                     if(!notCommon.contains(whatever[i] ) ) {
                         notCommon.add(whatever[i]);
                     }
